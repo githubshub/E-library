@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>E-Library!</title>
+</head>
+<body>
+    <div>
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+              <h3 class="text-lg font-medium leading-6 text-gray-900">Profile</h3>
+              
+            </div>
+          </div>
+    <div class="mt-5 md:mt-0 md:col-span-2">
+        <form action="#" method="POST">
+          <div class="shadow overflow-hidden sm:rounded-md">
+            <div class="px-4 py-5 bg-white sm:p-6">
+              <div class="grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="first_name" class="block text-sm font-medium leading-5 text-gray-700">Username</label>
+                  <input id="first_name" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="last_name" class="block text-sm font-medium leading-5 text-gray-700">Email ID</label>
+                  <input id="last_name" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-4">
+                  <label for="email_address" class="block text-sm font-medium leading-5 text-gray-700">Password</label>
+                  <input id="email_address" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="country" class="block text-sm font-medium leading-5 text-gray-700">Branch</label>
+                  <select id="country" class="mt-1 block form-select w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                    <option>Computer</option>
+                    <option>IT</option>
+                    <option>Mechanical</option>
+                    <option>Auto Mobile</option>
+                    <option>EXTC</option>
+                    <option>Electronics</option>
+                  </select>
+                </div>
+  
+                <div class="col-span-6">
+                  <label for="street_address" class="block text-sm font-medium leading-5 text-gray-700">Class</label>
+                  <input id="street_address" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                  <label for="city" class="block text-sm font-medium leading-5 text-gray-700">Division</label>
+                  <input id="city" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <label for="state" class="block text-sm font-medium leading-5 text-gray-700">Roll No.</label>
+                  <input id="state" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <label for="postal_code" class="block text-sm font-medium leading-5 text-gray-700">Profession</label>
+                  <input id="postal_code" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                </div>
+              </div>
+            </div>
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+           <button onclick="popup()" class="py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-indigo-600 transition duration-150 ease-in-out"
+            ><a href="login.html" >Submit</a>
+              </button>
+              <script>
+                function popup(){
+                  alert(" Your Registration is Done . ")
+                }
+              </script>
+             
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+<script>
+ 
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-3pajt4oyOQW5BMmnmEZo1_WWUEyz1qo",
+    authDomain: "e-libray-513f0.firebaseapp.com",
+    projectId: "e-libray-513f0",
+    storageBucket: "e-libray-513f0.appspot.com",
+    messagingSenderId: "194353355615",
+    appId: "1:194353355615:web:4fc20cd32e381cf6ad74ea",
+    measurementId: "G-9FZQ2F462T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  function RegisterUser()
+  {
+    var email=document.getElementById('email').value;
+    var password=document.getElementById('password').value;
+    firebase.auth().createUserWithEmailAndPassword(email,password).then(function(){
+      alert('User Register Successfully');
+
+    }).catch(function(error){
+
+      var errorcode=error.code;
+      var errormsg=error.message;
+
+    });  
+  }
+</script>
+</body>
+</html>
